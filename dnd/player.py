@@ -1,4 +1,4 @@
-from dnd.key import Key
+from key import Key
 
 class Player:
     def __init__(self, name, location):

@@ -1,6 +1,6 @@
-from dnd.game_map import GameMap, ROOM_MAP
-from dnd.player import Player
-from dnd.game import Game
+from game_map import GameMap, ROOM_MAP
+from player import Player
+from game import Game
 
 if __name__ == "__main__":
     map_obj = GameMap(ROOM_MAP)

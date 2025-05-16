@@ -1,6 +1,6 @@
-from dnd.key import Key
-from dnd.room import Room
-from dnd.door import Door
+from key import Key
+from room import Room
+from door import Door
 
 rusty_key = Key("Rusty Key")
 golden_key = Key("Golden Key")
