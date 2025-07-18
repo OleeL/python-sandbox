@@ -1,4 +1,4 @@
-class Door:
+class Door():
     def __init__(self, key, description = "Door", is_locked=True):
         self.lock_id = key.get_secret()
         self.description = description

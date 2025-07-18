@@ -1,4 +1,4 @@
-from key import Key
+from items.key import Key
 
 class Player:
     def __init__(self, name, location):
@@ -21,17 +21,17 @@ class Player:
             print("Invalid direction.")
             return
 
-        if next_room and next_room.door and next_room.door.is_locked:
+        if not next_room:
+            print("You can't go that way.")
+            return
+
+        if next_room.door and next_room.door.is_locked:
             print(f"The door to the {next_room.name} is locked. Trying your keys...")
             if not self._try_unlock(next_room.door):
                 print("You don't have the right key.")
                 return
             else:
                 print(f"You unlocked the door to the {next_room.name}!")
-
-        if not next_room:
-            print("You can't go that way.")
-            return
 
         self.location = next_room
 

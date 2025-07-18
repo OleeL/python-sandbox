@@ -1,12 +1,11 @@
-# def sum(a, b)
+user_dict = {
+    "name": "Jane",
+    "age": 25,
+    "email": "jane@example.com",
+    "inventory": {
+        "gold": 100,
+        "items": ["sword", "shield"]
+    }
+}
 
-# x x x
-# x x x
-# x x x
-#
-#
-
-x = 0
-y = 0
-for i in range(max(x-1, 0), min(x+1)):
-    print('hi')
+print(user_dict["inventory"]["gold"])

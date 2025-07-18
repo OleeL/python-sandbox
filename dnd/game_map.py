@@ -1,12 +1,9 @@
-from key import Key
+from items.key import Key
 from room import Room
 from door import Door
 
 rusty_key = Key("Rusty Key")
 golden_key = Key("Golden Key")
-
-print(f"{rusty_key} {rusty_key.get_secret()}")
-print(f"{golden_key} {golden_key.get_secret()}")
 
 ROOM_MAP = {
     "hall": {
@@ -33,7 +30,7 @@ ROOM_MAP = {
         "north": "hall",
         "south": "bathroom",
         "east": "closet",
-        "lock": Door(key = golden_key, description="A rusty lock"),
+        "lock": Door(key = golden_key, description="A golden lock"),
         "west": "office",
         "description": "A cozy bedroom with a comfortable bed and a small desk.",
         "items": []

@@ -1,3 +1,4 @@
+import sys
 class Game:
     def __init__(self, player, map_obj):
         self.player = player
@@ -41,6 +42,10 @@ class Game:
             for itm in self.player.inventory:
                 print(f"  - {itm}")
 
+    def quit(self):
+        print("Goodbye!")
+        sys.exit(0)
+
     def print_help(self):
         print("Available commands:")
         print("quit - Quit the game")
@@ -53,14 +58,17 @@ class Game:
     def start(self):
         print(self.player.location)
         while True:
-            command = input("\nWhat do you want to do? ").lower()
+            try:
+                command = input("\nWhat do you want to do? ").lower()
+            except KeyboardInterrupt:
+                print()
+                self.quit()
             if command == "quit":
-                print("Goodbye!")
-                break
+                self.quit()
             elif command == "look":
                 self.look()
             elif command.startswith("go "):
-                self.go(command.split()[1])
+                self.go(command.split(" ")[1])
             elif command.startswith("take "):
                 self.take(command)
             elif command == "inventory":
