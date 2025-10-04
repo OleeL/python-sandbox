@@ -1,0 +1,11 @@
+
+What is the capital of France?|Paris|Rome|Berlin|1
+Which country is known as the Land of the Rising Sun?|China|Japan|Thailand|2
+What is the largest continent by area?|Africa|Asia|Europe|2
+Which ocean is the largest in the world?|Atlantic|Indian|Pacific|3
+What is the longest river in the world?|Amazon|Nile|Yangtze|2
+Which is the smallest country by land area?|Vatican City|Monaco|Nauru|1
+Which desert is the largest in the world?|Gobi|Sahara|Kalahari|2
+What country has the most natural lakes?|Canada|Brazil|Russia|1
+Which language is the most spoken worldwide?|English|Mandarin|Spanish|2
+Which US state has the most coastline?|Texas|California|Alaska|3
