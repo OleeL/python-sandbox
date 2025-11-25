@@ -19,6 +19,10 @@ class SimpleAPIHandler(BaseHTTPRequestHandler):
             self._set_headers()
             response = {"status": "ok"}
             self.wfile.write(json.dumps(response).encode("utf-8"))
+        elif self.path == "/bananas":
+            self._set_headers()
+            response = {"banana_counter": 1000}
+            self.wfile.write(json.dumps(response).encode("utf-8"))
         else:
             self._set_headers(404)
             response = {"error": "Not found"}
