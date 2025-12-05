@@ -5,7 +5,7 @@ import game_map
 
 pygame.init()
 screen = pygame.display.set_mode((960, 600))
-pygame.display.set_caption("Pygame Camera — Follow, Scroll, Zoom")
+pygame.display.set_caption("Pygame Camera - Follow, Scroll, Zoom")
 clock = pygame.time.Clock()
 
 WORLD_W, WORLD_H = 3200, 2400
@@ -155,7 +155,7 @@ def main():
 
         # draw world to base_surf
         base_surf.fill((25, 28, 35))
-        # camera view rect (world coords) — must compute before checking collisions
+        # camera view rect (world coords) - must compute before checking collisions
         view = camera.view_rect
         
         
