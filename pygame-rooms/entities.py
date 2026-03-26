@@ -39,3 +39,13 @@ class Player(Entity):
             move = move.normalize() * self.speed * dt
             self.rect.x += int(move.x)
             self.rect.y += int(move.y)
+
+
+myNumber: int = 10
+print(myNumber)
+
+
+def add(a: str, b: str):
+    return a + b
+    
+print(add(1, 2))

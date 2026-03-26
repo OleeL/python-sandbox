@@ -11,10 +11,11 @@ class Key:
     
 class Lock:
     def __init__(self):
-        self.id = uuid.uuid4()
+        self.__id = uuid.uuid4()
+        
         
     def issue_key(self, key_name):
-        return Key(self.id, key_name)
+        return Key(self.__id, key_name)
     
 lock = Lock()
 key = lock.issue_key("hall key")
